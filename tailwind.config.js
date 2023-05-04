@@ -40,6 +40,13 @@ module.exports = {
           to: { transform: "translateY(0)" },
         },
       },
+      colors: {
+        myRed: "#ee4540",
+        myFuschiaL: "#c72c41",
+        myFuschiaM: "#801336",
+        myFuschiaB: "#510a32",
+        myVioletD: "#2d142c",     
+      },
     },
   },
   plugins: [],
