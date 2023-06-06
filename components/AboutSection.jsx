@@ -65,8 +65,9 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              5 years ago, I ask my have that I have a disruptif ideas for movies market. She said that she don`$apos;`t want to know more about it.
-              I forget and put this idéas aside until nowaday, because people on middle class even me. We are struggling.
+              5 years ago, I ask my wife about my disruptif idea for movies market. She said that she don&#39;t want to know more about it.
+              I forget and put this idéas aside until nowaday, because it&#39;s time for jugaad innovation to rise. Peoples are struggling, even middle class, hard workers.
+              We are struggling.
             </p>
             {/* <br />
             <p>
@@ -81,7 +82,7 @@ const AboutSection = () => {
               <span className="font-bold text-myRed">
                 Vid30
               </span>{" "}
-              is a frugal innovation and Jugaad project which will help peoples, have good impact for the environnement and more.
+              is a Jugaad innovation project which will help peoples (Inclusif), have good impact for the environnement (Green), by using less ressources for more impact (Smart) and more.
              🙂
             </p>
           </div>

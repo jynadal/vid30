@@ -22,7 +22,7 @@ const HeroSection = () => {
             You will have some great time, good nostalgical memory, save time, money and get more.
           </p>
           <Link href="https://linktr.ee/jynadal" target="_blank"
-            to="projects"
+            to="https://linktr.ee/jynadal"
             className="text-neutral-100 font-semibold px-6 py-3 bg-myRed  rounded shadow hover:bg-myFuschiaL"
             activeClass="active"
             spy={true}
