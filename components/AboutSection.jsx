@@ -1,36 +1,43 @@
-import React from "react"
-import Image from "next/image"
+'use client'; // this is a client component
 
-// const skills = [
-//   { skill: "Frugal innovation" },
-//   { skill: "Marketplace" },
-//    { skill: "Web 3" },
-//   { skill: "Machine Learning" },
-//   { skill: "Python" },
-//   { skill: "Doing MORE with LESS" },
-//   { skill: "React" },
-//   { skill: "Jugaad" },
-//   { skill: "Decentyralize" },
-//   { skill: "Git" },
-//   { skill: "GitHub" },
-//   { skill: "NFTs" },
-// ]
+import React from 'react';
+import Image from 'next/image';
+//import { Link } from 'react-scroll/modules';
+import Link from 'next/link';
+
+const skills = [
+  { skill: 'Frugal innovation' },
+  { skill: 'Marketplace' },
+  { skill: 'Web 3' },
+  { skill: 'Jugaad' },
+  { skill: 'Decentyralize' },
+  { skill: 'Smart TV' },
+  { skill: 'NFTs' },
+];
 
 const AboutSection = () => {
   return (
     <section id="about">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="text-center font-bold text-4xl">
+        <h2 className="text-center font-bold text-4xl">
           About Me
           <hr className="w-6 h-1 mx-auto my-4 bg-myFuschiaL border-0 rounded"></hr>
-        </h1>
+        </h2>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          
-          <div className="text-center md:w-1/2 md:text-left">
+          <div className="text-center justify-center md:w-1/2 md:text-left">
+            <h1 className="text-2xl font-bold mb-6"> </h1>
 
-            <h1 className="text-2xl font-bold mb-6">  </h1>
-            {/* <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
+            <Image
+              src="/jynwebded.jpg"
+              alt=""
+              width={325}
+              height={525}
+              className="hidden flex-row justify-center md:block md:relative md:bottom-6 mx-auto md:z-0"
+            />
+
+            <div className="flex flex-wrap flex-row justify-center z-10 md:justify-center">
+              <br />
               {skills.map((item, idx) => {
                 return (
                   <p
@@ -39,59 +46,82 @@ const AboutSection = () => {
                   >
                     {item.skill}
                   </p>
-                )
+                );
               })}
-            </div> */}
-
-            <Image
-              src="/jynwebded.jpg"
-              alt=""
-              width={325}
-              height={525}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
-            />
+            </div>
           </div>
-          
+
           <div className="md:w-1/2 ">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
-              Get to know me!
+              GM, hello world. Let&#39;s prompt!
             </h1>
             <p>
-              Hi, my name is Jean Yves and I am a{" "}
-              <span className="font-bold">{"web developer"}</span>,
-              <span className="font-bold">{" serial entreprener"}</span>, and have a
-              <span className="font-bold">{" disrupter mindset "} </span>
-              based in Paris, France.
+              My name is Jean Yves and I am a{' '}
+              <span className="font-bold">{'CEO and technical founder '}</span>{' '}
+              of, <span className="font-bold text-myRed">Vid30</span> based in
+              Paris, France.
+              <br />
+              I&#39;m also a{' '}
+              <span className="font-bold">{' real cinephile'}</span>,
+              <span className="font-bold">{' serial entreprener'}</span> and
+              with a<span className="font-bold">{' flibuster mindset '} </span>
+              ready to build awesome project.
+              <span className="font-bold">{' Are you with me?'}</span>
+              <br />
             </p>
             <br />
             <p>
-              5 years ago, I ask my wife about my disruptif idea for movies market. She said that she don&#39;t want to know more about it.
-              I forget and put this idéas aside until nowaday, because it&#39;s time for jugaad innovation to rise. Peoples are struggling, even middle class, hard workers.
-              We are struggling.
+              One year ago, people laught when I pitch them. I am still working
+              on my project, structuring and iterating.
+              <br />
+              <span className="font-bold">
+                {
+                  ' Do you know how hard it is to coding after difficult working days by carrying heavy packages in a warehouse?'
+                }
+              </span>
+              <br /> I took advise, do hackathon to learn and networking on
+              major conference.
             </p>
-            {/* <br />
+            <br />
+            {/*
             <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+              Thanks to Paris Blockchain Week, AWS ChainLink, theta Network,
+              Samsung, Sony, ... .
             </p> */}
-            <br />
+
             <p>
-              {" "}
-              <span className="font-bold text-myRed">
-                Vid30
-              </span>{" "}
-              is a Jugaad innovation project which will help peoples (Inclusif), have good impact for the environnement (Green), by using less ressources for more impact (Smart) and more.
-             🙂
+              {' '}
+              <span className="font-bold text-myRed">Vid30</span> is about to
+              launch with three product in one. <br />
+              <span className="font-bold text-myRed">VDTK</span> The backend
+              with Proof of Reserve, Real World Asset, Computing and Storage
+              Provider, ... <br />
+              <span className="font-bold text-myRed">Bankable</span> The
+              marketplace to sell RWA(movies) and more features. So 🙂!
             </p>
           </div>
-          
-          
         </div>
+
+        <div className="flex flex-row items-center justify-center mt-4">
+          <Link
+            href="https://linktr.ee/jynadal"
+            target="_blank"
+            to="https://linktr.ee/jynadal"
+            className="text-center font-bold text-2xl text-neutral-100 px-6 py-3 bg-myRed  rounded shadow hover:bg-myFuschiaL"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Let&#39;s take a call!
+          </Link>
+
+        </div>
+        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;
