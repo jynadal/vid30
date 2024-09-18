@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-//import { Link } from 'react-scroll/modules';
 import Link from 'next/link';
 
 const skills = [

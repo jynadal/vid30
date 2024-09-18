@@ -3,22 +3,15 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import SlideUp from './SlideUp';
 import { SiLinktree } from 'react-icons/si';
 import { BsLinkedin } from 'react-icons/bs';
-import {
-  AiOutlineGithub,
-  AiOutlineTwitter,
-  AiOutlineLinkedin,
-  AiOutlineYoutube,
-} from 'react-icons/ai';
 
 const services = [
   {
     title: 'Vid30',
-    name: ':Your STREAMING PLATEFORM.',
+    name: ': Your STREAMING PLATEFORM',
     description:
-      ' Working with partner like Vid30 by Kody, Vid30 by Samsung and we are open for more partners.',
+      ' Working with partner like Kody (Kody by Vid30), Sony and Samsung with Tizen app and we are open for more partners.',
     linkedin:
       'https://www.linkedin.com/feed/update/urn:li:activity:7021414724961521664',
     link: 'https://linktr.ee/jynadal',
@@ -55,24 +48,10 @@ const IcebergSection = () => {
         Marketplace) on the top. The hidding part is VDTK a centralized frugal
         innovation Startup to manage the all.
         <br />
-        Your favorite movies on DVDs, video tape or else, we can help you to
-        watch them at anytime and everywhere.
       </p>
       <br />
 
       <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-        <div className="text-center justify-center md:w-1/2 md:text-left">
-          <h1 className="text-2xl font-bold mb-6"> </h1>
-
-          <Image
-            src="/iceberg.jpg"
-            alt=""
-            width={623}
-            height={1000}
-            className="hidden flex-row justify-center md:block md:relative md:bottom-6 mx-auto md:z-0"
-          />
-        </div>
-
         <div className="md:w-1/2 ">
           {services.map((service, idx) => {
             return (
@@ -95,7 +74,7 @@ const IcebergSection = () => {
                   <Link href={service.link} target="_blank">
                     <SiLinktree
                       size={30}
-                      className="hover:-translate-y-1 transition-transform cursor-pointer"
+                      className="hover:-translate-y-1 transition-transform cursor-pointer "
                     />
                   </Link>
                   <br />
@@ -107,6 +86,32 @@ const IcebergSection = () => {
           })}
           <br />
         </div>
+
+        <div className="text-center justify-center md:w-1/2 md:text-left">
+          <Image
+            src="/icebergVBV.jpg"
+            alt=""
+            width={623}
+            height={1000}
+            className="hidden flex-row justify-center md:block md:relative md:bottom-6 mx-auto md:z-0"
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-row items-center justify-center mt-4">
+        <Link
+          href="https://linktr.ee/jynadal"
+          target="_blank"
+          to="https://linktr.ee/jynadal"
+          className="text-center font-bold text-2xl text-neutral-100 px-6 py-3 bg-myRed  rounded shadow hover:bg-myFuschiaL"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          Let&#39;s take a call!
+        </Link>
       </div>
     </section>
   );
