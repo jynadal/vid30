@@ -37,7 +37,7 @@ const services = [
 
 const IcebergSection = () => {
   return (
-    <section id="blog">
+    <section id="services">
       <h2 className="my-10 text-center font-bold text-4xl">
         Vid30, VDTK and Bankable services
         <hr className="w-6 h-1 mx-auto my-4 colors: bg-myRed border-0 rounded"></hr>
@@ -95,6 +95,25 @@ const IcebergSection = () => {
             height={1000}
             className="hidden flex-row justify-center md:block md:relative md:bottom-6 mx-auto md:z-0"
           />
+        </div>
+      </div>
+
+      {/* Video Demo Section */}
+      <div className="mt-16">
+        <h3 className="text-3xl font-bold text-center mb-8">
+          Watch Our Video Demo
+        </h3>
+        <div className="flex justify-center">
+          <iframe
+            width="800"
+            height="450"
+            src="/vid30.mp4"
+            title="Video Demo"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="rounded-lg shadow-lg"
+          ></iframe>
         </div>
       </div>
 
