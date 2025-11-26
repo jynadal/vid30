@@ -3,7 +3,7 @@ if(WIN32)
   cmake_minimum_required(VERSION 3.28)
 endif()
 
-project(kodi LANGUAGES CXX C ASM)
+project(vid30 LANGUAGES CXX C ASM)
 
 if(POLICY CMP0069)
   set(CMAKE_POLICY_DEFAULT_CMP0069 NEW)
